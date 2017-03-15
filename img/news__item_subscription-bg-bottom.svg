@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="220" viewBox="0 0 560 220">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f8f7f4;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Почтовый_фон" data-name="Почтовый фон" class="cls-1" d="M628,1624h530.01a15.005,15.005,0,0,1,15,15v190a15.005,15.005,0,0,1-15,15H628a15,15,0,0,1-15-15V1639A15,15,0,0,1,628,1624Z" transform="translate(-613 -1624)"/>
+</svg>

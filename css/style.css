@@ -448,6 +448,16 @@ ul {
   outline: 1px solid red;
 }
 
+.banners__banner-title {
+  font: 3.5em/1.1714285714em "Roboto-Bold", Arial, sans-serif;/*35/41*/
+  color: #fff;
+}
+
+.banners__banner-description {
+  font: 1.8em/1.2222222222em "Roboto-Bold", Arial, sans-serif;/*18/22*/
+  color: #fff;
+}
+
 /*FEATURE_ITEMS*/
 .container_feature-items {
   display: flex;
@@ -470,6 +480,16 @@ ul {
   float: right;
 }
 
+.about-us__company-description {
+  font: 2.4em/1.25em "Roboto-Medium", Arial, sans-serif;/*24/30*/
+  color: #323232;
+}
+
+.about-us__technology-description {
+  font: 1.6em/1.375em "Roboto", Arial, sans-serif;/*16/22*/
+  color: #323232;
+}
+
 /*NEWS*/
 .news__item {
   width: 40%;
@@ -484,11 +504,54 @@ ul {
   float: right;
 }
 
+.news__blog-news {
+  font: 1.6em/1.375em "Roboto-Medium", Arial, sans-serif;/*16/22*/
+  color: #323232;
+}
+
+.news__blog-entry-title {
+  font: 2.4em/1.25em "Roboto-Bold", Arial, sans-serif;/*24/30*/
+  text-decoration: underline;
+  color: #323232;
+}
+
+.news__subscription-description {
+  font: 1.6em/1.375em "Roboto", Arial, sans-serif;/*16/22*/
+  color: #5a5a5a;
+}
+
+.news__input::-webkit-input-placeholder {
+  font: 1.6em/1.5em "Roboto", Arial, sans-serif;/*16/24*/
+  color: #999999;
+}
+.news__input:-moz-placeholder {
+  font: 1.6em/1.5em "Roboto", Arial, sans-serif;/*16/24*/
+  color: #999999;
+}
+.news__input::-moz-placeholder {
+  font: 1.6em/1.5em "Roboto", Arial, sans-serif;/*16/24*/
+  color: #999999;
+}
+.news__input:-ms-input-placeholder {
+  font: 1.6em/1.5em "Roboto", Arial, sans-serif;/*16/24*/
+  color: #999999;
+}
+
 /*CONTACTS*/
 .contacts__feedback {
   float: right;
   width: 40%;
   outline: 1px solid red;
+}
+
+.contacts__span {
+  font: 1.4em/1.4285714286em "Roboto", Arial, sans-serif;/*14/20*/
+  color: #323232;
+}
+
+.contacts__info {
+  font: 1.8em/1.3333333333em "Roboto-Bold", Arial, sans-serif;/*18/24*/
+  color: #323232;
 }
 
 /*CATALOG-----------------------------------------------*/
@@ -548,6 +611,16 @@ ul {
   margin-right: 0px;
 }
 
+.catalog-items__item-price {
+  font: 4.5em/1em "Roboto-Bold", Arial, sans-serif;/*45(?)/45*/
+  color: #fff;
+}
+
+.catalog-items__description {
+  font: 1.6em/1.375em "Roboto-Medium", Arial, sans-serif;/*16/22*/
+  color: #fff;
+}
+
 /*CATALOG-NAV*/
 .catalog-nav {
   width: 100%;
@@ -575,12 +648,31 @@ ul {
   outline: 1px solid red;
 }
 
+.socials__social-btn {
+  border-color: #c2cec7;
+}
+
 .footer-menu {
   outline: 1px solid red;
 }
 
+.footer-menu__link {
+  font: 1.3em/1.3846153846em "Roboto", Arial, sans-serif;/*13/18*/
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-menu__link_distributors {
+  font: 1.3em/1.3846153846em "Roboto-Bold", Arial, sans-serif;/*13/18*/
+  color: #fff;
+}
+
 .made-by {
   outline: 1px solid red;
+}
+
+.made-by__span {
+  border-bottom: none;
 }
 
 /* Media-queries-desktops/tablets */
