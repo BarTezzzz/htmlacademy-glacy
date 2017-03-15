@@ -101,7 +101,16 @@ ul {
 }
 
 .glacy-btn {
-  
+  display: block;
+  font: 1.8em/1.3333333333em "Roboto-Bold", Arial, sans-serif;/*18/24*/
+  text-align: center;
+  color: #fff;
+  background-color: #ec5f3e;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 1px 2px 0 #ec5f3e;
 }
 
 /*INDEX-------------------------------------------------*/
@@ -247,40 +256,183 @@ ul {
 
 
 /*SLIDER*/
-
 .slider {
-  
+  margin-bottom: 35px;
 }
 
 .container_slider {
   position: relative;
 }
 
-.slider__switches {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100px;
-  height: 20px;
-  outline: 1px solid red;
-}
-
-.slider__switch {
-  position: relative;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #fff;
-  cursor: pointer;
-  outline: 1px solid red;
-}
-
 .slider__input {
   display: none;
 }
 
+.slider__switches {
+  position: absolute;
+  bottom: 23px;
+  left: 2px;
+  width: 80px;
+  height: 20px;
+  outline: 1px solid red;
+  z-index: 1;
+}
+
+.slider__switch {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  outline: 1px solid red;
+}
+
+.slider__switch:last-of-type {
+  margin-right: 0;
+}
+
+#s1-r1:checked ~ .slider__switches > .slider__switch[for='s1-r1'],
+#s1-r2:checked ~ .slider__switches > .slider__switch[for='s1-r2'],
+#s1-r3:checked ~ .slider__switches > .slider__switch[for='s1-r3'] {
+  background-color: #fff;
+}
+
 .slider__wrapper {
-  padding: 20px 0;
+  width: inherit;
+  height: 490px;
+  outline: 1px solid red;
+}
+
+.slider__slide {
+  position: relative;
+  display: none;
+  width: inherit;
+  height: inherit;
+  padding-top: 277px;
+  text-align: center;
+}
+
+#s1-r1:checked ~ .slider__wrapper > .slider__slide_1,
+#s1-r2:checked ~ .slider__wrapper > .slider__slide_2,
+#s1-r3:checked ~ .slider__wrapper > .slider__slide_3 {
+  display: block;
+}
+
+.slider__bg-slide {
+  margin: 0 auto;
+}
+
+.slider__light-bg,
+.slider__ice-bg-left,
+.slider__ice-bg-right {
+  position: absolute;
+  content: "";
+}
+
+.slider__light-bg {
+  top: -160px;
+  left: 50px;
+  z-index: -3;
+}
+
+.slider__ice-bg-left {
+  z-index: -1;
+}
+
+.slider__ice-bg-right {
+  z-index: -2;
+}
+
+.slider__light-bg_1 {
+  width: 1045px;
+  height: 881px;
+  background: transparent url('../img/slider__slide1-light.png') no-repeat center;
+  
+}
+
+.slider__ice-bg-left_1 {
+  top: -33px;
+  left: 249px;
+  width: 372px;
+  height: 584px;
+  background: transparent url('../img/slider__slide1-ice_left.png') no-repeat center;
+}
+
+.slider__ice-bg-right_1 {
+  top: 10px;
+  left: 565px;
+  width: 333px;
+  height: 519px;
+  background: transparent url('../img/slider__slide1-ice_right.png') no-repeat center;
+}
+
+.slider__light-bg_2 {
+  width: 1065px;
+  height: 859px;
+  background: transparent url('../img/slider__slide2-light.png') no-repeat center;
+}
+
+.slider__ice-bg-left_2 {
+  top: -32px;
+  left: 247px;
+  width: 375px;
+  height: 582px;
+  background: transparent url('../img/slider__slide2-ice_left.png') no-repeat center;
+}
+
+.slider__ice-bg-right_2 {
+  top: 8px;
+  left: 553px;
+  width: 338px;
+  height: 523px;
+  background: transparent url('../img/slider__slide2-ice_right.png') no-repeat center;
+}
+
+.slider__light-bg_3 {
+  width: 1079px;
+  height: 854px;
+  background: transparent url('../img/slider__slide3-light.png') no-repeat center;
+}
+
+.slider__ice-bg-left_3 {
+  top: -34px;
+  left: 249px;
+  width: 372px;
+  height: 584px;
+  background: transparent url('../img/slider__slide3-ice_left.png') no-repeat center;
+}
+
+.slider__ice-bg-right_3 {
+  top: 6px;
+  left: 560px;
+  width: 333px;
+  height: 519px;
+  background: transparent url('../img/slider__slide3-ice_right.png') no-repeat center;
+}
+
+.slider__title {
+  margin-bottom: 30px;
+  font: 6em/1.0058333333em "Roboto-Bold", Arial, sans-serif;/*60/60.35*/
+  text-align: center;
+  color: #fff;
+}
+
+.glacy-btn_slider {
+  width: 278px;
+  margin: 0 auto;
+  padding-top: 7px;
+  padding-bottom: 10px;
+  font: 3.2em/1.375em "Roboto-Bold", Arial, sans-serif;/*32/44*/
+  text-align: center;
+  color: #fff;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 /*BANNERS*/
