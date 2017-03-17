@@ -633,8 +633,9 @@ ul {
   padding-left: 25px;
   float: right;
   background: 
-    url('../img/news__item_subscription-bg-bottom.svg') no-repeat center,
-    url('../img/news__item_subscription-bg-top.svg') no-repeat center;
+    url('../img/news__item_subscription-bg-top.png') no-repeat center,    
+    url('../img/news__item_subscription-bg-bottom.png') no-repeat center;
+    
 }
 
 .news__blog-news {
@@ -643,6 +644,7 @@ ul {
 }
 
 .news__blog-entry-title {
+  display: block;
   margin-top: 5px;
   font: 2.4em/1.25em "Roboto-Bold", Arial, sans-serif;/*24/30*/
   text-decoration: underline;
@@ -650,35 +652,110 @@ ul {
 }
 
 .news__subscription-description {
+  margin-bottom: 36px;
   font: 1.6em/1.375em "Roboto", Arial, sans-serif;/*16/22*/
   color: #5a5a5a;
 }
 
-.news__input::-webkit-input-placeholder {
+.news__input {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.news__input_email {
+  width: 352px;
+  margin-right: 9px;
+  padding-top: 8px;
+  padding-left: 15px;
+  padding-bottom: 9px;
   font: 1.6em/1.5em "Roboto", Arial, sans-serif;/*16/24*/
   color: #999999;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  outline: none;
 }
-.news__input:-moz-placeholder {
-  font: 1.6em/1.5em "Roboto", Arial, sans-serif;/*16/24*/
+
+.news__input_email::-webkit-input-placeholder {
+  font: 1em/1.5em "Roboto", Arial, sans-serif;/*16/24*/
   color: #999999;
 }
-.news__input::-moz-placeholder {
-  font: 1.6em/1.5em "Roboto", Arial, sans-serif;/*16/24*/
+.news__input_email:-moz-placeholder {
+  font: 1em/1.5em "Roboto", Arial, sans-serif;/*16/24*/
   color: #999999;
 }
-.news__input:-ms-input-placeholder {
-  font: 1.6em/1.5em "Roboto", Arial, sans-serif;/*16/24*/
+.news__input_email::-moz-placeholder {
+  font: 1em/1.5em "Roboto", Arial, sans-serif;/*16/24*/
+  color: #999999;
+}
+.news__input_email:-ms-input-placeholder {
+  font: 1em/1.5em "Roboto", Arial, sans-serif;/*16/24*/
   color: #999999;
 }
 
+.news__input_submit {
+  width: 127px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 20px;
+}
+
 /*CONTACTS*/
+.contacts {
+  height: 430px;
+  padding-top: 30px;  
+}
+
+.container_contacts {
+  position: relative;
+  width: 1200px;
+}
+
+.contacts__map-link::before {
+  position: absolute;
+  top: 138px;
+  left: 267px;
+  width: 78.937px;
+  height: 138.75px;
+  background: url('../img/contacts__map-label.svg') no-repeat center;
+  content: "";
+  outline: 1px solid red;
+}
+
+.contacts__map-link::after {
+  position: absolute;
+  top: 170px;
+  left: 300px;
+  width: 182px;
+  height: 110px;
+  background: url('../img/contacts__map-label-shadow.png') no-repeat center;
+  content: "";
+  outline: 1px solid red;
+}
+
 .contacts__feedback {
-  float: right;
-  width: 40%;
+  position: absolute;
+  top: 62px;
+  right: 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 255px;
+  height: 245px;
+  padding-top: 28px;
+  padding-left: 25px;
+  padding-bottom: 29px;
+  padding-right: 22px;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 15px;
   outline: 1px solid red;
 }
 
 .contacts__span {
+  display: block;
+  margin-bottom: 3px;
   font: 1.4em/1.4285714286em "Roboto", Arial, sans-serif;/*14/20*/
   color: #323232;
 }
@@ -686,6 +763,19 @@ ul {
 .contacts__info {
   font: 1.8em/1.3333333333em "Roboto-Bold", Arial, sans-serif;/*18/24*/
   color: #323232;
+}
+
+.contacts__info_address {
+  margin-bottom: 18px;
+}
+
+.glacy-btn_feedback {
+  width: 250px;
+  margin: 0 auto;
+  margin-top: auto;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  border-radius: 20px;
 }
 
 /*CATALOG-----------------------------------------------*/
@@ -743,6 +833,10 @@ ul {
 }
 
 /*FOOTER*/
+.footer {
+  padding-top: 33px;
+}
+
 .container_footer {
   display: flex;
   justify-content: space-between;
@@ -750,11 +844,22 @@ ul {
 }
 
 .socials {
+  padding-top: 3px;
+  padding-left: 1px;
   outline: 1px solid red;
 }
 
 .socials__social-btn {
-  border-color: #c2cec7;
+  display: inline-block;
+  width: 31.375px;
+  height: 31.4px;
+  margin-right: 9px;
+  border: 3px solid #c2cec7;
+  border-radius: 50%;
+}
+
+.socials__social-btn:last-of-type {
+  margin-right: 0px;
 }
 
 .footer-menu {

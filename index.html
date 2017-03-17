@@ -243,34 +243,37 @@
       <div class="container clearfix">
         <div class="banners__banner news__item news__item_blog">
           <span class="news__blog-news">Новое в нашем блоге</span>
-          <h3 class="news__blog-entry-title">
+          <a class="news__blog-entry-title" href="#">
             10 способов сервировки
             <br>фруктовых щербетов
             <br>к столу.
-          </h3>
+          </a>
         </div>
         <div class="banners__banner news__item news__item_subscription">
           <p class="news__subscription-description">
             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
           </p>
           <form class="news__form" method="post">
-            <input class="news__input" type="email" placeholder="Электронная почта">
-            <input class="glacy-btn news__submit" type="submit" value="Отправить">
+            <input class="news__input news__input_email" type="email" placeholder="Электронная почта">
+            <input class="glacy-btn news__input news__input_submit" type="submit" value="Отправить">
           </form>
         </div>
       </div>
     </div>
 
     <div class="contacts">
-      <div class="container clearfix">
+      <div class="container container_contacts">
+        <a class="contacts__map-link" href="map.html">
+          <img class="contacts__map-img" src="img/contacts__map.png" width="1200" height="430" alt="map">
+        </a>
         <div class="contacts__feedback">
           <span class="contacts__span">
             Адрес главного офиса и
-            офлайн магазина:
+            <br>офлайн магазина:
           </span>
           <strong class="contacts__info contacts__info_address">
             ул. Большая Конюшенная
-            19/8, Санкт-Петербург
+            <br>19/8, Санкт-Петербург
           </strong>
           <span class="contacts__span">Для заказов по телефону:</span>
           <strong class="contacts__info contacts__info_phone">8 812 450-25-25</strong>
@@ -284,17 +287,17 @@
   <footer class="footer">
     <div class="container container_footer">
       <div class="socials">
-        <a class="socials__social-btn" href="#">
-          <img class="socials__social-img" src="img/" width="" height="" alt="twitter">
+        <a class="socials__social-btn socials__social-btn_tw" href="#">
+          <img class="socials__social-img" src="img/footer-socials__twitter.svg" width="31.375" height="31.4" alt="twitter">
         </a>
-        <a class="socials__social-btn" href="#">
-          <img class="socials__social-img" src="img/" width="" height="" alt="instagram">
+        <a class="socials__social-btn socials__social-btn_inst" href="#">
+          <img class="socials__social-img" src="img/footer-socials__insta.svg" width="31.375" height="31.4" alt="instagram">
         </a>
-        <a class="socials__social-btn" href="#">
-          <img class="socials__social-img" src="img/" width="" height="" alt="facebook">
+        <a class="socials__social-btn socials__social-btn_fb" href="#">
+          <img class="socials__social-img" src="img/footer-socials__fb.svg" width="31.375" height="31.4" alt="facebook">
         </a>
-        <a class="socials__social-btn" href="#">
-          <img class="socials__social-img" src="img/" width="" height="" alt="vkontakte">
+        <a class="socials__social-btn socials__social-btn_vk" href="#">
+          <img class="socials__social-img" src="img/footer-socials__vk.svg" width="31.375" height="31.4" alt="vkontakte">
         </a>
       </div>
       <ul class="footer-menu">
@@ -313,7 +316,7 @@
       </ul>
       <div class="made-by">
         <a class="made-by__logo" href="https://htmlacademy.ru/">
-          <img class="made-by__logo" src="img/" width="" height="" alt="HTMLAcademy">
+          <img class="made-by__logo" src="img/footer-made-by__logo.svg" width="107.622" height="36.69" alt="HTMLAcademy">
         </a>
         <span class="footer-menu__link made-by__span">
           Сделано в <a class="footer-menu__link made-by__link" href="https://htmlacademy.ru/">HTML Academy</a> © 2016
