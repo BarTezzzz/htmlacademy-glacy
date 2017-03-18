@@ -39,11 +39,11 @@
               <img class="glacy-logo" src="img/logo-glacy.svg" width="164" height="64" alt="glacy-logo">
             </span>
           </li>
-          <li class="header-top__li">
-            <a href="catalog-creamy.html" class="header-top__menu-link">Каталог</a>
+          <li class="header-top__li header-top__li_catalog-container">
+            <a href="catalog-creamy.html" class="header-top__menu-link header-top__menu-link_catalog">Каталог</a>
             <ul class="header-top__submenu hidden">
               <li class="header-top__li header-top__submenu-li">
-                <a href="#" class="header-top__menu-link header-top__submenu-link">Новинки</a>
+                <a href="#" class="header-top__menu-link header-top__submenu-link header-top__submenu-link_main">Новинки</a>
               </li>
               <li class="header-top__li header-top__submenu-li">
                 <a href="catalog-creamy.html" class="header-top__menu-link header-top__submenu-link">Сливочное</a>
@@ -170,7 +170,7 @@
         <div class="catalog-items__item feature-items__item feature-items__item_1">
           <img class="catalog-items__img" src="img/feature-items__item_1.png" width="267" height="267" alt="feature item 1">
           <div class="feature-tems__hit-label"></div>
-          <span class="catalog-items__item-price">310₽/кг</span>
+          <span class="catalog-items__item-price">310₽<span class="catalog-items__item-price_regular">/кг</span></span>
           <p class="catalog-items__description">
             Сливочное с апельсиновым джемом и цитрусовой стружкой
           </p>
@@ -178,7 +178,7 @@
         <div class="catalog-items__item feature-items__item feature-items__item_2">
           <img class="catalog-items__img" src="img/feature-items__item_2.png" width="267" height="267" alt="feature item 2">
           <div class="feature-tems__hit-label"></div>
-          <span class="catalog-items__item-price">380₽/кг</span>
+          <span class="catalog-items__item-price">380₽<span class="catalog-items__item-price_regular">/кг</span></span>
           <p class="catalog-items__description">
             Сливочно-кофейное с кусочками шоколада
           </p>
@@ -186,7 +186,7 @@
         <div class="catalog-items__item feature-items__item feature-items__item_3">
           <img class="catalog-items__img" src="img/feature-items__item_3.png" width="267" height="267" alt="feature item 3">
           <div class="feature-tems__hit-label"></div>
-          <span class="catalog-items__item-price">355₽/кг</span>
+          <span class="catalog-items__item-price">355₽<span class="catalog-items__item-price_regular">/кг</span></span>
           <p class="catalog-items__description">
             Сливочно-клубничное с присыпкой из белого шоколада
           </p>
@@ -194,7 +194,7 @@
         <div class="catalog-items__item feature-items__item feature-items__item_4">
           <img class="catalog-items__img" src="img/feature-items__item_4.png" width="267" height="267" alt="feature item 4">
           <div class="feature-tems__hit-label"></div>
-          <span class="catalog-items__item-price">415₽/кг</span>
+          <span class="catalog-items__item-price">415₽<span class="catalog-items__item-price_regular">/кг</span></span>
           <p class="catalog-items__description">
             Сливочное крем-брюле с карамельной подливкой
           </p>
@@ -246,7 +246,7 @@
           <a class="news__blog-entry-title" href="#">
             10 способов сервировки
             <br>фруктовых щербетов
-            <br>к столу.
+            <br>к столу
           </a>
         </div>
         <div class="banners__banner news__item news__item_subscription">
@@ -300,26 +300,32 @@
           <img class="socials__social-img" src="img/footer-socials__vk.svg" width="31.375" height="31.4" alt="vkontakte">
         </a>
       </div>
-      <ul class="footer-menu">
-        <li class="footer-meu__li">
-          <a class="footer-menu__link footer-menu__link_distributors" href="#">Для поставщиков</a>
-        </li>
-        <li class="footer-meu__li">
-          <a class="footer-menu__link" href="#">О производстве</a>
-        </li>
-        <li class="footer-meu__li">
-          <a class="footer-menu__link" href="#">Наши документы</a>
-        </li>
-        <li class="footer-meu__li">
-          <a class="footer-menu__link" href="#">Экологические стандарты</a>
-        </li>
-      </ul>
+      <div class="footer-menu clearfix">
+        <ul class="footer-menu__list footer-menu__list_left">
+          <li class="footer-menu__li">
+            <a class="footer-menu__link footer-menu__link_distributors" href="#">Для поставщиков</a>
+          </li>
+          <li class="footer-meu__li">
+            <a class="footer-menu__link" href="#">О производстве</a>
+          </li>
+        </ul>
+        <ul class="footer-menu__list footer-menu__list_right">
+          <li class="footer-meu__li">
+            <a class="footer-menu__link" href="#">Наши документы</a>
+          </li>
+          <li class="footer-meu__li">
+            <a class="footer-menu__link" href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+      </div>
       <div class="made-by">
         <a class="made-by__logo" href="https://htmlacademy.ru/">
           <img class="made-by__logo" src="img/footer-made-by__logo.svg" width="107.622" height="36.69" alt="HTMLAcademy">
         </a>
-        <span class="footer-menu__link made-by__span">
-          Сделано в <a class="footer-menu__link made-by__link" href="https://htmlacademy.ru/">HTML Academy</a> © 2016
+        <br><span class="made-by__span">
+          Сделано в 
+          <a class="made-by__link" href="https://htmlacademy.ru/">HTML Academy</a> 
+          © 2016
         </span>
       </div>
     </div>

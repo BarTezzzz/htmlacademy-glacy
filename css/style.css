@@ -155,6 +155,37 @@ ul {
   margin-right: 0;
 }
 
+.header-top__li_catalog-container {
+  position: relative;
+}
+
+.header-top__menu-link_catalog:hover ~ .header-top__submenu {
+  display: block;
+}
+
+.header-top__submenu {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 130px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 14px;
+  background-color: #fff;
+  box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.header-top__submenu-link {
+  margin-bottom: 15px;
+  font: 1.4em/1.1428571429em "Roboto", Arial, sans-serif;/*14/16*/
+  color: #323232;
+}
+
+.header-top__submenu-link_main {
+  font-family: "Roboto-Bold";
+}
+
 .header-top__user-menu {
   float: right;
   display: flex;
@@ -516,6 +547,10 @@ ul {
   outline: 1px solid red;
 }
 
+.catalog-items__item-price_regular {
+  font: 0.6666666667em/1.5em "Roboto", Arial, sans-serif;/*30/45*//*check*/
+}
+
 .catalog-items__description {
   font: 1.6em/1.375em "Roboto-Medium", Arial, sans-serif;/*16/22*/
   text-align: center;
@@ -839,11 +874,12 @@ ul {
 
 .container_footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: stretch;
 }
 
 .socials {
+  margin-right: 183px;
   padding-top: 3px;
   padding-left: 1px;
   outline: 1px solid red;
@@ -866,23 +902,70 @@ ul {
   outline: 1px solid red;
 }
 
+.footer-menu__list {
+  text-align: left;
+}
+
+.footer-menu__list_left {
+  float: left;
+  position: relative;
+  margin-right: 30px;
+  padding-left: 52px;
+}
+
+.footer-menu__list_right {
+  float: right;
+}
+
+.footer-menu__list_left::before {
+  position: absolute;
+  top: 3px;
+  left: 31px;
+  width: 14.562px;
+  height: 12.66px;
+  background: url('../img/footer-menu__link_distributors-heart.svg') no-repeat center;
+  content: "";
+}
+
 .footer-menu__link {
+  display: inline-block;
+  margin-bottom: 3px;
   font: 1.3em/1.3846153846em "Roboto", Arial, sans-serif;/*13/18*/
   color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .footer-menu__link_distributors {
+  position: relative;
   font: 1.3em/1.3846153846em "Roboto-Bold", Arial, sans-serif;/*13/18*/
   color: #fff;
 }
 
 .made-by {
+  margin-left: auto;
+  position: relative;
+  padding-top: 17px;
+  outline: 1px solid red;
+}
+
+.made-by__logo {
+  position: absolute;
+  top: -7px;
+  left: 1px;
+  width: 107.622px; 
+  height: 36.69px;
   outline: 1px solid red;
 }
 
 .made-by__span {
+  font: 1.2em/1.5em "Roboto", Arial, sans-serif;/*12/18*/
+  color: #fff;
   border-bottom: none;
+}
+
+.made-by__link {
+  color: #fff;  
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* Media-queries-desktops/tablets */
