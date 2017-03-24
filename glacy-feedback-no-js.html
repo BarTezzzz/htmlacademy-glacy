@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Учебный макет HTMLAcademy - Glacy">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>HTMLAcademy Glacy</title>
+
+  <link href="css/normalize.css" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet">
+  <!--<link href="css/style.min.css" rel="stylesheet">-->
+
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <!--<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">-->
+
+  <!--<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">-->
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="bg-1">
+  <header class="header">
+    <div class="container">
+      <div class="header-top clearfix">
+        <ul class="header-top__menu">
+          <li class="header-top__li">
+            <span class="header-top__menu-link header-top__menu-link_logo">
+              <img class="glacy-logo" src="img/logo-glacy.svg" width="164" height="64" alt="glacy-logo">
+            </span>
+          </li>
+          <li class="header-top__li header-top__li_catalog-container">
+            <a href="catalog-creamy.html" class="header-top__menu-link header-top__menu-link_catalog">Каталог</a>
+            <ul class="header-top__submenu hidden">
+              <li class="header-top__li header-top__submenu-li">
+                <a href="#" class="header-top__menu-link header-top__submenu-link header-top__submenu-link_main">Новинки</a>
+              </li>
+              <li class="header-top__li header-top__submenu-li">
+                <a href="catalog-creamy.html" class="header-top__menu-link header-top__submenu-link">Сливочное</a>
+              </li>
+              <li class="header-top__li header-top__submenu-li">
+                <a href="#" class="header-top__menu-link header-top__submenu-link">Щербеты</a>
+              </li>
+              <li class="header-top__li header-top__submenu-li">
+                <a href="#" class="header-top__menu-link header-top__submenu-link">Фруктовый лед</a>
+              </li>
+              <li class="header-top__li header-top__submenu-li">
+                <a href="#" class="header-top__menu-link header-top__submenu-link">Мелорин</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-top__li">
+            <a href="#" class="header-top__menu-link">Доставка и оплата</a>
+          </li>
+          <li class="header-top__li">
+            <a href="#" class="header-top__menu-link">О Компании</a>
+          </li>
+        </ul>
+        <ul class="header-top__user-menu">
+          <li class="header-top__user-li">
+            <a href="#" class="header-top__user-link header-top__user-link_search">
+              <img class="header-top__user-icon_search" src="img/header-top__search.svg" width="16.687" height="16.688" alt="search-icon">
+              <form class="header-top__search-form hidden" method="post">
+                <input class="header-top__search-input" type="text" placeholder="Что ищем?">
+              </form>
+            </a>
+          </li>
+          <li class="header-top__user-li">
+            <a href="#" class="header-top__user-link header-top__user-link_enter">
+              <img class="header-top__user-icon header-top__user-icon_enter" src="img/header-top__enter.svg" width="20.063" height="19" alt="enter-icon"> Вход
+              <div class="header-top__enter-window hidden">
+                <form class="header-top__enter-form" method="post">
+                  <input class="header-top__enter-input" type="email" placeholder="Электронная почта">
+                  <input class="header-top__enter-input" type="password" placeholder="Пароль">
+                  <input class="glacy-btn header-top__enter-submit" type="submit" value="Войти">
+                </form>
+                <a class="header-top__enter-link" href="#">Забыли пароль?</a>
+                <a class="header-top__enter-link" href="#">Новая регистрация</a>
+              </div>
+            </a>
+          </li>
+          <li class="header-top__user-li">
+            <a href="#" class="header-top__user-link header-top__user-link_cart">
+              <img class="header-top__user-icon header-top__user-icon_cart" src="img/header-top__cart.svg" width="20.63" height="19.719" alt="cart-icon"> Пусто
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-bottom clearfix">
+        <div class="header-phones">
+          <span class="header-bottom__span header-bottom__span_top">С 10 до 20, ежедневно</span>
+          <span class="header-bottom__span header-bottom__span_bottom">8 812 450-25-25</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="feedback feedback-no-js">
+    <form class="feedback__form" method="post">
+      <h2 class="feedback__title">Мы обязательно вам ответим!</h2>
+      <input class="feedback__input" type="text" placeholder="Как вас зовут?">
+      <input class="feedback__input" type="email" placeholder="Ваша почта для ответа?">
+      <textarea class="feedback__input feedback__textarea" placeholder="Напишите что-нибудь..."></textarea>
+      <input class="glacy-btn feedback__submit" type="submit" value="Отправить">
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="container container_footer">
+      <div class="socials">
+        <a class="socials__social-btn socials__social-btn_tw" href="#">
+          <img class="socials__social-img" src="img/footer-socials__twitter.svg" width="31.375" height="31.4" alt="twitter">
+        </a>
+        <a class="socials__social-btn socials__social-btn_inst" href="#">
+          <img class="socials__social-img" src="img/footer-socials__insta.svg" width="31.375" height="31.4" alt="instagram">
+        </a>
+        <a class="socials__social-btn socials__social-btn_fb" href="#">
+          <img class="socials__social-img" src="img/footer-socials__fb.svg" width="31.375" height="31.4" alt="facebook">
+        </a>
+        <a class="socials__social-btn socials__social-btn_vk" href="#">
+          <img class="socials__social-img" src="img/footer-socials__vk.svg" width="31.375" height="31.4" alt="vkontakte">
+        </a>
+      </div>
+      <div class="footer-menu clearfix">
+        <ul class="footer-menu__list footer-menu__list_left">
+          <li class="footer-menu__li">
+            <a class="footer-menu__link footer-menu__link_distributors" href="#">Для поставщиков</a>
+          </li>
+          <li class="footer-meu__li">
+            <a class="footer-menu__link" href="#">О производстве</a>
+          </li>
+        </ul>
+        <ul class="footer-menu__list footer-menu__list_right">
+          <li class="footer-meu__li">
+            <a class="footer-menu__link" href="#">Наши документы</a>
+          </li>
+          <li class="footer-meu__li">
+            <a class="footer-menu__link" href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="made-by">
+        <a class="made-by__logo" href="https://htmlacademy.ru/">
+          <img class="made-by__logo" src="img/footer-made-by__logo.svg" width="107.622" height="36.69" alt="HTMLAcademy">
+        </a>
+        <br><span class="made-by__span">
+          Сделано в 
+          <a class="made-by__link" href="https://htmlacademy.ru/">HTML Academy</a> 
+          © 2016
+        </span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

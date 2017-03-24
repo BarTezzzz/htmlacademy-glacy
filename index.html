@@ -70,11 +70,23 @@
           <li class="header-top__user-li">
             <a href="#" class="header-top__user-link header-top__user-link_search">
               <img class="header-top__user-icon_search" src="img/header-top__search.svg" width="16.687" height="16.688" alt="search-icon">
+              <form class="header-top__search-form hidden" method="post">
+                <input class="header-top__search-input" type="text" placeholder="Что ищем?">
+              </form>
             </a>
           </li>
           <li class="header-top__user-li">
             <a href="#" class="header-top__user-link header-top__user-link_enter">
               <img class="header-top__user-icon header-top__user-icon_enter" src="img/header-top__enter.svg" width="20.063" height="19" alt="enter-icon"> Вход
+              <div class="header-top__enter-window hidden">
+                <form class="header-top__enter-form" method="post">
+                  <input class="header-top__enter-input" type="email" placeholder="Электронная почта">
+                  <input class="header-top__enter-input" type="password" placeholder="Пароль">
+                  <input class="glacy-btn header-top__enter-submit" type="submit" value="Войти">
+                </form>
+                <a class="header-top__enter-link" href="#">Забыли пароль?</a>
+                <a class="header-top__enter-link" href="#">Новая регистрация</a>
+              </div>
             </a>
           </li>
           <li class="header-top__user-li">
@@ -278,7 +290,7 @@
           <span class="contacts__span">Для заказов по телефону:</span>
           <strong class="contacts__info contacts__info_phone">8 812 450-25-25</strong>
           <span class="contacts__span">(с 10 до 20 ежедневно)</span>
-          <a class="glacy-btn glacy-btn_feedback" href="#">Форма обратной связи</a>
+          <a class="glacy-btn glacy-btn_feedback" href="glacy-feedback-no-js.html">Форма обратной связи</a>
         </div>
       </div>
     </div>
@@ -332,6 +344,16 @@
   </footer>
 
   <div class="overlay"></div>
+  <div class="feedback feedback-modal-window hidden">
+    <div class="feedback__close-btn"></div>
+    <form class="feedback__form" method="post">
+      <h2 class="feedback__title">Мы обязательно вам ответим!</h2>
+      <input class="feedback__input" type="text" placeholder="Как вас зовут?">
+      <input class="feedback__input" type="email" placeholder="Ваша почта для ответа?">
+      <textarea class="feedback__input" placeholder="Напишите что-нибудь..."></textarea>
+      <input class="glacy-btn feedback__submit" type="submit" value="Отправить">
+    </form>
+  </div>
 
   <!-- Scripts______________________________________ -->
   <script src="script/jquery-3.1.1.min.js"></script>
