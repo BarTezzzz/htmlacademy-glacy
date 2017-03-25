@@ -34,14 +34,14 @@
     <div class="container">
       <div class="header-top clearfix">
         <ul class="header-top__menu">
-          <li class="header-top__li">
+          <li class="header-top__li_logo">
             <span class="header-top__menu-link header-top__menu-link_logo">
               <img class="glacy-logo" src="img/logo-glacy.svg" width="164" height="64" alt="glacy-logo">
             </span>
           </li>
           <li class="header-top__li header-top__li_catalog-container">
             <a href="catalog-creamy.html" class="header-top__menu-link header-top__menu-link_catalog">Каталог</a>
-            <ul class="header-top__submenu hidden">
+            <ul class="header-top__submenu">
               <li class="header-top__li header-top__submenu-li">
                 <a href="#" class="header-top__menu-link header-top__submenu-link header-top__submenu-link_main">Новинки</a>
               </li>
@@ -275,7 +275,7 @@
 
     <div class="contacts">
       <div class="container container_contacts">
-        <a class="contacts__map-link" href="map.html">
+        <a class="contacts__map-link js-modal-show" href="glacy-map-no-js.html">
           <img class="contacts__map-img" src="img/contacts__map.png" width="1200" height="430" alt="map">
         </a>
         <div class="contacts__feedback">
@@ -290,7 +290,7 @@
           <span class="contacts__span">Для заказов по телефону:</span>
           <strong class="contacts__info contacts__info_phone">8 812 450-25-25</strong>
           <span class="contacts__span">(с 10 до 20 ежедневно)</span>
-          <a class="glacy-btn glacy-btn_feedback" href="glacy-feedback-no-js.html">Форма обратной связи</a>
+          <a class="glacy-btn glacy-btn_feedback js-modal-show" href="glacy-feedback-no-js.html">Форма обратной связи</a>
         </div>
       </div>
     </div>
@@ -345,7 +345,7 @@
 
   <div class="overlay"></div>
   <div class="feedback feedback-modal-window hidden">
-    <div class="feedback__close-btn"></div>
+    <div class="modal__close-btn"></div>
     <form class="feedback__form" method="post">
       <h2 class="feedback__title">Мы обязательно вам ответим!</h2>
       <input class="feedback__input" type="text" placeholder="Как вас зовут?">
@@ -353,6 +353,10 @@
       <textarea class="feedback__input" placeholder="Напишите что-нибудь..."></textarea>
       <input class="glacy-btn feedback__submit" type="submit" value="Отправить">
     </form>
+  </div>
+  <div class="map map-modal-window hidden">
+    <div class="modal__close-btn"></div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1998.6250741580834!2d30.321150915809532!3d59.93836328187608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCAxOS84LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0LPQvtGA0L7QtCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2skz!4v1490431899506" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
 
   <!-- Scripts______________________________________ -->

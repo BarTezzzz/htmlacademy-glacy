@@ -50,4 +50,22 @@ $(document).ready(function () {
   
   //setInterval($.fn.sliderSwitcherAuto, 3000);
 
+/*Modal-Window*/
+  $('.js-modal-show').on('click', function () {
+    $.fn.eventPreventDefaultSafe();
+    $('.overlay').show();
+    if ($(this).hasClass('glacy-btn_feedback')) {
+      $('.feedback-modal-window').fadeIn('slow');
+    } else if ($(this).hasClass('contacts__map-link')) {
+      $('.map-modal-window').fadeIn('slow');
+    }
+  });
+  
+  $('.modal__close-btn').on('click', function () {
+    $.fn.eventPreventDefaultSafe();
+    $('.feedback-modal-window').fadeOut('fast');
+    $('.map-modal-window').fadeOut('fast');
+    $('.overlay').hide();
+  });
+  
 });
