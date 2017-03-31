@@ -35,27 +35,27 @@
       <div class="header-top clearfix">
         <ul class="header-top__menu">
           <li class="header-top__li_logo">
-            <span class="header-top__menu-link header-top__menu-link_logo">
+            <a href="index.html" class="header-top__menu-link_logo">
               <img class="glacy-logo" src="img/logo-glacy.svg" width="164" height="64" alt="glacy-logo">
-            </span>
+            </a>
           </li>
           <li class="header-top__li header-top__li_catalog-container">
             <a href="catalog-creamy.html" class="header-top__menu-link header-top__menu-link_catalog">Каталог</a>
-            <ul class="header-top__submenu hidden">
-              <li class="header-top__li header-top__submenu-li">
-                <a href="#" class="header-top__menu-link header-top__submenu-link header-top__submenu-link_main">Новинки</a>
+            <ul class="header-top__submenu">
+              <li class="header-top__submenu-li">
+                <a href="#" class="header-top__submenu-link header-top__submenu-link_main">Новинки</a>
               </li>
-              <li class="header-top__li header-top__submenu-li">
-                <a href="catalog-creamy.html" class="header-top__menu-link header-top__submenu-link">Сливочное</a>
+              <li class="header-top__submenu-li">
+                <a href="catalog-creamy.html" class="header-top__submenu-link">Сливочное</a>
               </li>
-              <li class="header-top__li header-top__submenu-li">
-                <a href="#" class="header-top__menu-link header-top__submenu-link">Щербеты</a>
+              <li class="header-top__submenu-li">
+                <a href="#" class="header-top__submenu-link">Щербеты</a>
               </li>
-              <li class="header-top__li header-top__submenu-li">
-                <a href="#" class="header-top__menu-link header-top__submenu-link">Фруктовый лед</a>
+              <li class="header-top__submenu-li">
+                <a href="#" class="header-top__submenu-link">Фруктовый лед</a>
               </li>
-              <li class="header-top__li header-top__submenu-li">
-                <a href="#" class="header-top__menu-link header-top__submenu-link">Мелорин</a>
+              <li class="header-top__submenu-li">
+                <a href="#" class="header-top__submenu-link">Мелорин</a>
               </li>
             </ul>
           </li>
@@ -67,32 +67,35 @@
           </li>
         </ul>
         <ul class="header-top__user-menu">
-          <li class="header-top__user-li">
+          <li class="header-top__user-li header-top__user-li_search">
             <a href="#" class="header-top__user-link header-top__user-link_search">
-              <img class="header-top__user-icon_search" src="img/header-top__search.svg" width="16.687" height="16.688" alt="search-icon">
-              <form class="header-top__search-form hidden" method="post">
+              <form class="header-top__search-form" method="post">
                 <input class="header-top__search-input" type="text" placeholder="Что ищем?">
               </form>
             </a>
           </li>
-          <li class="header-top__user-li">
-            <a href="#" class="header-top__user-link header-top__user-link_enter">
-              <img class="header-top__user-icon header-top__user-icon_enter" src="img/header-top__enter.svg" width="20.063" height="19" alt="enter-icon"> Вход
-              <div class="header-top__enter-window hidden">
-                <form class="header-top__enter-form" method="post">
-                  <input class="header-top__enter-input" type="email" placeholder="Электронная почта">
-                  <input class="header-top__enter-input" type="password" placeholder="Пароль">
-                  <input class="glacy-btn header-top__enter-submit" type="submit" value="Войти">
-                </form>
-                <a class="header-top__enter-link" href="#">Забыли пароль?</a>
-                <a class="header-top__enter-link" href="#">Новая регистрация</a>
-              </div>
-            </a>
+          <li class="header-top__user-li header-top__user-li_enter">
+            <a href="#" class="header-top__user-link header-top__user-link_enter">Вход</a>
+            <div class="header-top__enter-window">
+              <form class="header-top__enter-form" method="post">
+                <input class="header-top__enter-input" type="email" placeholder="Электронная почта">
+                <input class="header-top__enter-input" type="password" placeholder="Пароль">
+                <div class="enter-window__bottom clearfix">
+                  <input class="glacy-btn header-top__enter-submit" type="submit" value="Войти">  
+                  <div class="enter-window__links-block">
+                    <a class="header-top__enter-link" href="#">
+                      <span class="enter-window__span">Забыли пароль?</span>
+                    </a>
+                    <a class="header-top__enter-link" href="#">
+                      <span class="enter-window__span">Новая регистрация</span>
+                    </a>    
+                  </div>
+                </div>
+              </form>
+            </div>
           </li>
           <li class="header-top__user-li">
-            <a href="#" class="header-top__user-link header-top__user-link_cart">
-              <img class="header-top__user-icon header-top__user-icon_cart" src="img/header-top__cart.svg" width="20.63" height="19.719" alt="cart-icon"> Пусто
-            </a>
+            <a href="#" class="header-top__user-link header-top__user-link_cart">Пусто</a>
           </li>
         </ul>
       </div>
@@ -111,7 +114,9 @@
       <input class="feedback__input" type="text" placeholder="Как вас зовут?">
       <input class="feedback__input" type="email" placeholder="Ваша почта для ответа?">
       <textarea class="feedback__input feedback__textarea" placeholder="Напишите что-нибудь..."></textarea>
-      <input class="glacy-btn feedback__submit" type="submit" value="Отправить">
+      <div class="feedback__submit-section clearfix">
+        <input class="glacy-btn feedback__submit" type="submit" value="Отправить">
+      </div>
     </form>
   </main>
 
