@@ -711,6 +711,8 @@ ul {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  padding-top: 27px;
+  outline: 1px solid red;
 }
 
 .catalog-items__item {
@@ -718,6 +720,7 @@ ul {
   width: 267px;
   height: 360px;
   margin-bottom: 20px;
+  outline: 1px solid red;
 }
 
 .catalog-items__img {
@@ -748,6 +751,30 @@ ul {
   color: #fff;
 }
 
+.catalog-items__item:hover > .catalog-items__item-overlay {
+  display: block;
+}
+
+.catalog-items__item-overlay {
+  position: absolute;
+  top: -2%;
+  left: -6%;
+  width: 300px;
+  height: 398px;
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: 1px solid red;
+  z-index: 1;
+}
+
+.glacy-btn_item {
+  position: absolute;
+  bottom: 20px;
+  left: 20%;
+  width: 192px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 20px;
+}
 
 /*FEATURE_ITEMS*/
 
@@ -1093,12 +1120,35 @@ ul {
 .input-range__bar {
   left: 30%;
   width: 75px;
-  background-color: #fff;
+  background-color: #f8f7f4;
   transform: translate(-30%, -50%;)
 }
 
+.input-range__switch {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #f8f7f4;
+  border-radius: 50%;
+  transform: translate(0, -50%);
+}
+
+.input-range__switch_left {
+  left: 40px;
+}
+
+.input-range__switch_right {
+  right: 50px;
+}
+
+
 .filter__options_fatness {
   width: 411px;
+}
+
+.filter__input {
+  display: none;
 }
 
 .filter__input,
@@ -1106,6 +1156,50 @@ ul {
 .filter__options_select {
   font: 1.6em/1.125em "Roboto-Medium", Arial, sans-serif;/*16/18*/
   color: #fff;
+}
+
+.filter__label {
+  position: relative;
+  cursor: pointer;
+}
+
+.filter__label_fatness {
+  margin-right: 5px;
+  padding-left: 33px;
+  outline: 1px solid red;
+}
+
+.filter__label_fatness:last-of-type {
+  margin-right: 0px;
+}
+
+.filter__label_fatness::before {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid #f8f7f4;
+  border-radius: 50%;
+  content: "";
+  transform: translate(0%; -50%);
+}
+
+#fat-0:checked ~ .filter__label_fatness[for="fat-0"]::after,
+#fat-10:checked ~ .filter__label_fatness[for="fat-10"]::after,
+#fat-30:checked ~ .filter__label_fatness[for="fat-30"]::after,
+#fat-30plus:checked ~ .filter__label_fatness[for="fat-30plus"]::after {
+  position: absolute;
+  top: 20%;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: #f8f7f4;
+  border: 1px solid #f8f7f4;
+  border-radius: 50%;
+  content: "";
+  transform: translate(0%; -50%);
 }
 
 .filter-bottom {
@@ -1116,18 +1210,66 @@ ul {
   float: left;
 }
 
+.filter__options_filler {
+  width: 702px;
+}
+
+.filter__label_filler {
+  margin-right: 15px;
+  padding-left: 28px;
+  outline: 1px solid red;
+}
+
+.filter__label_filler:last-of-type {
+  margin-right: 0px;
+}
+
+.filter__label_filler::before {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 20px;
+  height: 20px;
+  background: url('../img/catalog__filter_checkbox-unchecked.svg') no-repeat center;
+  content: "";
+  transform: translate(0%; -50%);
+}
+
+#choco:checked ~ .filter__label_filler[for="choco"]::after,
+#sugar:checked ~ .filter__label_filler[for="sugar"]::after,
+#fruits:checked ~ .filter__label_filler[for="fruits"]::after,
+#syrup:checked ~ .filter__label_filler[for="syrup"]::after,
+#jam:checked ~ .filter__label_filler[for="jam"]::after {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 20px;
+  height: 20px;
+  background: url('../img/catalog__filter_checkbox-checked.svg') no-repeat center;
+  content: "";
+  transform: translate(0%; -50%);
+}
+
 .filter-block_submit {
+  position: relative;
   float: right;
+  vertical-align: bottom;
 }
 
 .filter__input_submit {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: block;
   width: 145px;
+  margin-top: 10px;
   padding-top: 8px;
   padding-bottom: 8px;
   background-color: rgba(255, 255, 255, 0.3);
   border: 2px solid #fff;
   border-radius: 20px;
   outline: none;
+  cursor: pointer;
 }
 
 /*CATALOG-NAV*/

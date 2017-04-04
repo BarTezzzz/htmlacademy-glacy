@@ -132,38 +132,38 @@
             <div class="filter__options filter__options_input-range">
               <div class="input-range__scale"></div>
               <div class="input-range__bar"></div>
-              <div class="input-range__switch_left"></div>
-              <div class="input-range__switch_right"></div>
+              <div class="input-range__switch input-range__switch_left"></div>
+              <div class="input-range__switch input-range__switch_right"></div>
             </div>
           </div>
           <div class="filter-block filter-block_fat">
             <h4 class="filter-block-name">Жирность:</h4>
             <div class="filter__options filter__options_fatness">
-              <input id="fat-0" class="filter__input filter__input_radio" type="radio" name="fatness" value="fat-0">
-              <label for="fat-0" class="filter__label">0%</label>
-              <input id="fat-10" class="filter__input filter__input_radio" type="radio" name="fatness" value="fat-10" checked>
-              <label for="fat-10" class="filter__label">до 10%</label>
-              <input id="fat-30" class="filter__input filter__input_radio" type="radio" name="fatness" value="fat-30">
-              <label for="fat-30" class="filter__label">до 30%</label>
-              <input id="fat-30+" class="filter__input filter__input_radio" type="radio" name="fatness" value="fat-30+">
-              <label for="fat-30+" class="filter__label">выше 30%</label>
+              <input id="fat-0" class="filter__input filter__input_fatness" type="radio" name="fatness" value="fat-0">
+              <label for="fat-0" class="filter__label filter__label_fatness">0%</label>
+              <input id="fat-10" class="filter__input filter__input_fatness" type="radio" name="fatness" value="fat-10" checked>
+              <label for="fat-10" class="filter__label filter__label_fatness">до 10%</label>
+              <input id="fat-30" class="filter__input filter__input_fatness" type="radio" name="fatness" value="fat-30">
+              <label for="fat-30" class="filter__label filter__label_fatness">до 30%</label>
+              <input id="fat-30plus" class="filter__input filter__input_fatness" type="radio" name="fatness" value="fat-30+">
+              <label for="fat-30plus" class="filter__label filter__label_fatness">выше 30%</label>
             </div>
           </div>
         </div>
         <div class="filter-bottom clearfix">
           <div class="filter-block filter-block_filler">
             <h4 class="filter-block-name">Наполнители:</h4>
-            <div class="filter__options">
-              <input id="choco" class="filter__input filter__input_checkbox" type="checkbox" name="fillers" value="choco" checked>
-              <label for="choco" class="filter__label">шоколадные</label>
-              <input id="sugar" class="filter__input filter__input_checkbox" type="checkbox" name="fillers" value="sugar" checked>
-              <label for="sugar" class="filter__label">сахарные присыпки</label>
-              <input id="fruits" class="filter__input filter__input_checkbox" type="checkbox" name="fillers" value="fruits">
-              <label for="fruits" class="filter__label">фрукты</label>
-              <input id="syrup" class="filter__input filter__input_checkbox" type="checkbox" name="fillers" value="syrup">
-              <label for="syrup" class="filter__label">сиропы</label>
-              <input id="jam" class="filter__input filter__input_checkbox" type="checkbox" name="fillers" value="jam">
-              <label for="jam" class="filter__label">джемы</label>
+            <div class="filter__options filter__options_filler">
+              <input id="choco" class="filter__input filter__input_filler" type="checkbox" name="fillers" value="choco" checked>
+              <label for="choco" class="filter__label filter__label_filler">шоколадные</label>
+              <input id="sugar" class="filter__input filter__input_filler" type="checkbox" name="fillers" value="sugar" checked>
+              <label for="sugar" class="filter__label filter__label_filler">сахарные присыпки</label>
+              <input id="fruits" class="filter__input filter__input_filler" type="checkbox" name="fillers" value="fruits">
+              <label for="fruits" class="filter__label filter__label_filler">фрукты</label>
+              <input id="syrup" class="filter__input filter__input_filler" type="checkbox" name="fillers" value="syrup">
+              <label for="syrup" class="filter__label filter__label_filler">сиропы</label>
+              <input id="jam" class="filter__input filter__input_filler" type="checkbox" name="fillers" value="jam">
+              <label for="jam" class="filter__label filter__label_filler">джемы</label>
             </div>
           </div>
           <div class="filter-block filter-block_submit">
@@ -174,120 +174,120 @@
       </form>
       <div class="catalog-items">
         <div class="catalog-items__item">
-          <div class="catalog-items_item-overlay hidden">
+          <div class="catalog-items__item-overlay hidden">
             <a class="glacy-btn glacy-btn_item" href="#">Быстрый просмотр</a>
           </div>
-          <img class="catalog-items__img" src="img/" width="100" height="100" alt="catalog item 1">
+          <img class="catalog-items__img" src="img/catalog__item_1.png" width="267" height="267" alt="catalog item 1">
           <span class="catalog-items__item-price">310₽<span class="catalog-items__item-price_regular">/кг</span></span>
           <p class="catalog-items__description">
             Сливочное с апельсиновым джемом и цитрусовой стружкой
           </p>
         </div>
         <div class="catalog-items__item">
-          <div class="catalog-items_item-overlay hidden">
+          <div class="catalog-items__item-overlay hidden">
             <a class="glacy-btn glacy-btn_item" href="#">Быстрый просмотр</a>
           </div>
-          <img class="catalog-items__img" src="img/" width="100" height="100" alt="catalog item 2">
+          <img class="catalog-items__img" src="img/catalog__item_2.png" width="267" height="267" alt="catalog item 2">
           <span class="catalog-items__item-price">380₽<span class="catalog-items__item-price_regular">/кг</span></span>
           <p class="catalog-items__description">
             Сливочно-кофейное с кусочками шоколада
           </p>
         </div>
         <div class="catalog-items__item">
-          <div class="catalog-items_item-overlay hidden">
+          <div class="catalog-items__item-overlay">
             <a class="glacy-btn glacy-btn_item" href="#">Быстрый просмотр</a>
           </div>
-          <img class="catalog-items__img" src="img/" width="100" height="100" alt="catalog item 3">
+          <img class="catalog-items__img" src="img/catalog__item_3.png" width="267" height="267" alt="catalog item 3">
           <span class="catalog-items__item-price">355₽<span class="catalog-items__item-price_regular">/кг</span></span>
           <p class="catalog-items__description">
             Сливочно-клубничное с присыпкой из белоог шоколада
           </p>
         </div>
         <div class="catalog-items__item">
-          <div class="catalog-items_item-overlay hidden">
+          <div class="catalog-items__item-overlay hidden">
             <a class="glacy-btn glacy-btn_item" href="#">Быстрый просмотр</a>
           </div>
-          <img class="catalog-items__img" src="img/" width="100" height="100" alt="catalog item 4">
+          <img class="catalog-items__img" src="img/catalog__item_4.png" width="267" height="267" alt="catalog item 4">
           <span class="catalog-items__item-price">415₽<span class="catalog-items__item-price_regular">/кг</span></span>
           <p class="catalog-items__description">
             Сливочное крем-брюле с крамельной подливкой
           </p>
         </div>
         <div class="catalog-items__item">
-          <div class="catalog-items_item-overlay hidden">
+          <div class="catalog-items__item-overlay hidden">
             <a class="glacy-btn glacy-btn_item" href="#">Быстрый просмотр</a>
           </div>
-          <img class="catalog-items__img" src="img/" width="100" height="100" alt="catalog item 5">
+          <img class="catalog-items__img" src="img/catalog__item_5.png" width="267" height="267" alt="catalog item 5">
           <span class="catalog-items__item-price">325₽<span class="catalog-items__item-price_regular">/кг</span></span>
           <p class="catalog-items__description">
             Сливочное с брусничным джемом
           </p>
         </div>
         <div class="catalog-items__item">
-          <div class="catalog-items_item-overlay hidden">
+          <div class="catalog-items__item-overlay hidden">
             <a class="glacy-btn glacy-btn_item" href="#">Быстрый просмотр</a>
           </div>
-          <img class="catalog-items__img" src="img/" width="100" height="100" alt="catalog item 6">
+          <img class="catalog-items__img" src="img/catalog__item_6.png" width="267" height="267" alt="catalog item 6">
           <span class="catalog-items__item-price">410₽<span class="catalog-items__item-price_regular">/кг</span></span>
           <p class="catalog-items__description">
             Сливочно-черничное с цельными ягодами черники
           </p>
         </div>
         <div class="catalog-items__item">
-          <div class="catalog-items_item-overlay hidden">
+          <div class="catalog-items__item-overlay hidden">
             <a class="glacy-btn glacy-btn_item" href="#">Быстрый просмотр</a>
           </div>
-          <img class="catalog-items__img" src="img/" width="100" height="100" alt="catalog item 7">
+          <img class="catalog-items__img" src="img/catalog__item_7.png" width="267" height="267" alt="catalog item 7">
           <span class="catalog-items__item-price">375₽<span class="catalog-items__item-price_regular">/кг</span></span>
           <p class="catalog-items__description">
             Сливочно-лимонное с карамельной присыпкой
           </p>
         </div>
         <div class="catalog-items__item">
-          <div class="catalog-items_item-overlay hidden">
+          <div class="catalog-items__item-overlay hidden">
             <a class="glacy-btn glacy-btn_item" href="#">Быстрый просмотр</a>
           </div>
-          <img class="catalog-items__img" src="img/" width="100" height="100" alt="catalog item 8">
+          <img class="catalog-items__img" src="img/catalog__item_8.png" width="267" height="267" alt="catalog item 8">
           <span class="catalog-items__item-price">320 ₽<span class="catalog-items__item-price_regular">/кг</span></span>
           <p class="catalog-items__description">
             Сливочное с шоколадной стружкой
           </p>
         </div>
         <div class="catalog-items__item">
-          <div class="catalog-items_item-overlay hidden">
+          <div class="catalog-items__item-overlay hidden">
             <a class="glacy-btn glacy-btn_item" href="#">Быстрый просмотр</a>
           </div>
-          <img class="catalog-items__img" src="img/" width="100" height="100" alt="catalog item 9">
+          <img class="catalog-items__img" src="img/catalog__item_9.png" width="267" height="267" alt="catalog item 9">
           <span class="catalog-items__item-price">440₽<span class="catalog-items__item-price_regular">/кг</span></span>
           <p class="catalog-items__description">
             Сливочно-ванильное с кусочками шоколада
           </p>
         </div>
         <div class="catalog-items__item">
-          <div class="catalog-items_item-overlay hidden">
+          <div class="catalog-items__item-overlay hidden">
             <a class="glacy-btn glacy-btn_item" href="#">Быстрый просмотр</a>
           </div>
-          <img class="catalog-items__img" src="img/" width="100" height="100" alt="catalog item 10">
+          <img class="catalog-items__img" src="img/catalog__item_10.png" width="267" height="267" alt="catalog item 10">
           <span class="catalog-items__item-price">435₽<span class="catalog-items__item-price_regular">/кг</span></span>
           <p class="catalog-items__description">
             Сливочное с ментоловым сиропом
           </p>
         </div>
         <div class="catalog-items__item">
-          <div class="catalog-items_item-overlay hidden">
+          <div class="catalog-items__item-overlay hidden">
             <a class="glacy-btn glacy-btn_item" href="#">Быстрый просмотр</a>
           </div>
-          <img class="catalog-items__img" src="img/" width="100" height="100" alt="catalog item 11">
+          <img class="catalog-items__img" src="img/catalog__item_11.png" width="267" height="267" alt="catalog item 11">
           <span class="catalog-items__item-price">355₽<span class="catalog-items__item-price_regular">/кг</span></span>
           <p class="catalog-items__description">
             Сливочное с кусочками черного шоколада
           </p>
         </div>
         <div class="catalog-items__item">
-          <div class="catalog-items_item-overlay hidden">
+          <div class="catalog-items__item-overlay hidden">
             <a class="glacy-btn glacy-btn_item" href="#">Быстрый просмотр</a>
           </div>
-          <img class="catalog-items__img" src="img/" width="100" height="100" alt="catalog item ">
+          <img class="catalog-items__img" src="img/catalog__item_12.png" width="267" height="267" alt="catalog item 12">
           <span class="catalog-items__item-price">420₽<span class="catalog-items__item-price_regular">/кг</span></span>
           <p class="catalog-items__description">
             Сливочное с мятным сиропом
