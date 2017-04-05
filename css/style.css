@@ -445,6 +445,7 @@ ul {
 .header-bottom {
   width: 100%;
   padding-top: 6px;
+  outline: 1px solid red;
 }
 
 .header-phones {
@@ -474,6 +475,40 @@ ul {
   /*24*/
 }
 
+/*BREADCRUMBS*/
+
+.header__catalog-breadcrumbs {
+  float: left;
+  padding-top: 27px;
+  outline: 1px solid red;
+}
+
+.breadcrumbs__link {
+  display: inline-block;
+  position: relative;
+  margin-right: 3px;
+  padding-right: 15px;
+  font: 1.4em/1.1428571429em "Roboto", Arial, sans-serif;/*14/16*/
+  color: #fff;
+  outline: 1px solid red;
+}
+
+.breadcrumbs__link::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: "»";
+  transform: translate(0, -50%);
+}
+
+.breadcrumbs__link_active {
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+.breadcrumbs__link_active::after {
+  display: none;
+}
 
 /*SLIDER*/
 
@@ -711,7 +746,6 @@ ul {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding-top: 27px;
   outline: 1px solid red;
 }
 
@@ -1043,23 +1077,18 @@ ul {
 
 /*CATALOG-----------------------------------------------*/
 
-
-/*BREADCRUMBS*/
-
-.breadcrumbs {
-  outline: 1px solid red;
-}
-
-.breadcrumbs__link {
-  font: 1.4em/1.1428571429em "Roboto", Arial, sans-serif;/*14/16*/
+.catatog__section-title {
+  margin: 0;
+  padding-top: 2px;
+  font: 3.5em/1.1714285714em "Roboto-Bold", Arial, sans-serif;/*35/41*/
   color: #fff;
 }
 
 /*FILTER*/
 
-.catatog__section-title {
-  font: 3.5em/1.1714285714em "Roboto-Bold", Arial, sans-serif;/*35/41*/
-  color: #fff;
+.filter {
+  padding-top: 28px;
+  padding-bottom: 30px;
 }
 
 .filter-top,
@@ -1075,40 +1104,77 @@ ul {
 }
 
 .filter-block {
+  margin-right: 15px;
   outline: 1px solid red;
 }
 
+.filter-block_sort-by {
+  position: relative;
+}
+
 .filter-block-name {
-  margin-bottom: 7px;
+  margin-bottom: 5px;
   padding-left: 17px;
   font: 1.4em/1.1428571429em "Roboto-Medium", Arial, sans-serif;/*14/16*/
   color: #fff;
 }
 
 .filter__options {
-  padding-top: 9px;
+  padding-top: 7px;
+  padding-left: 14px;
+  padding-right: 12px;
   padding-bottom: 9px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.3);
+  border: none;
   border-radius: 15px;
+  outline: none;
 }
 
 .filter__options_select {
-  width: 194px;
+  width: 194px;/*194*/
+  padding-top: 9px;
+  padding-bottom: 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+.filter-block_sort-by::after {
+  position: absolute;
+  top: 61%;
+  right: 16px;
+  width: 7.781px;
+  height: 5px;
+  background: url('../img/catalog__filter_select-arrow.svg') ;
+  content: "";
+  cursor: pointer;
+}
+
+.filter__options_select::-ms-expand {
+    background: #a9bab0;
+    color: #a9bab0;
+    border: none;
+  outline: none;
+   }
+
+.filter__select-option {
+  color: #323232;
 }
 
 .filter__options_input-range {
   position: relative;
-  width: 217px;
+  width: 190px;
   height: 23px;
 }
 
 .input-range__scale,
 .input-range__bar {
   position: absolute;
-  top: 50%;
+  top: 42.5%;
   left: 7%;
-  height: 2px;
+  height: 3px;
   transform: translate(-7%, -50%;)
 }
 
@@ -1118,15 +1184,15 @@ ul {
 }
 
 .input-range__bar {
-  left: 30%;
-  width: 75px;
+  left: 25%;
+  width: 80px;
   background-color: #f8f7f4;
   transform: translate(-30%, -50%;)
 }
 
 .input-range__switch {
   position: absolute;
-  top: 50%;
+  top: 43%;
   width: 20px;
   height: 20px;
   background-color: #f8f7f4;
@@ -1135,11 +1201,11 @@ ul {
 }
 
 .input-range__switch_left {
-  left: 40px;
+  left: 34px;
 }
 
 .input-range__switch_right {
-  right: 50px;
+  right: 64px;
 }
 
 
@@ -1208,6 +1274,7 @@ ul {
 
 .filter-block_filler {
   float: left;
+  margin-right: 5px;
 }
 
 .filter__options_filler {
@@ -1275,13 +1342,14 @@ ul {
 /*CATALOG-NAV*/
 
 .catalog-nav {
-  width: 100%;
+  min-width: 100%;
+  outline: 1px solid red;
 }
 
 .catalog-nav__list {
   float: right;
   display: table;
-  width: 40%;
+  
   outline: 1px solid red;
 }
 
@@ -1289,6 +1357,39 @@ ul {
   display: inline-block;
 }
 
+.catalog-nav__link {
+  display: block;
+  width: 10px;
+  height: 20px;
+  padding-top: 5px;
+  padding-left: 15px;
+  font: 1.6em/1.125em "Roboto-Medium", Arial, sans-serif;/*16/18*/
+  text-align: left;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 50%;
+  outline: 1px solid red;
+}
+
+.catalog-nav__link_active {
+  color: #323232;
+  background-color: #fff;
+}
+
+.catalog-nav__link_left,
+.catalog-nav__link_right {
+  background: url('../img/catalog__nav-arrow.svg') no-repeat 50% 80%;
+}
+
+.catalog-nav__link_right {
+  background-position: 50% 0%;
+  transform: rotate(180deg);
+  
+}
+
+.catalog-nav__link_non-active {
+  opacity: 1;/*check*/
+}
 
 /*FOOTER*/
 
