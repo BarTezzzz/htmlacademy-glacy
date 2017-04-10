@@ -363,9 +363,18 @@
     <div class="modal__close-btn"></div>
     <form class="feedback__form" method="post">
       <h2 class="feedback__title">Мы обязательно вам ответим!</h2>
-      <input class="feedback__input" type="text" placeholder="Как вас зовут?">
-      <input class="feedback__input" type="email" placeholder="Ваша почта для ответа?">
-      <textarea class="feedback__input feedback__textarea" placeholder="Напишите что-нибудь..."></textarea>
+      <div class="feedback__input-block">
+        <input class="feedback__input" type="text" placeholder="Как вас зовут?">
+        <div class="feedback__outer-placeholder hidden">Как вас зовут?</div>
+      </div>
+      <div class="feedback__input-block">
+        <input class="feedback__input" type="email" placeholder="Ваша почта для ответа?">
+        <div class="feedback__outer-placeholder hidden">Ваша почта для ответа?</div>
+      </div>
+      <div class="feedback__input-block">
+        <textarea class="feedback__input feedback__textarea" placeholder="Напишите что-нибудь..."></textarea>
+        <div class="feedback__outer-placeholder hidden">Напишите что-нибудь...</div>
+      </div>
       <div class="feedback__submit-section clearfix">
         <input class="glacy-btn feedback__submit" type="submit" value="Отправить">
       </div>

@@ -1251,6 +1251,7 @@ ul {
   background-color: #f8f7f4;
   border-radius: 50%;
   transform: translate(0, -50%);
+  cursor: pointer;
 }
 
 .input-range__switch_left {
@@ -1284,45 +1285,36 @@ ul {
 }
 
 .filter__label_fatness {
+  display: inline-block;
+  min-height: 20px;
   margin-right: 15px;
   padding-left: 33px;
+  background: url('../img/catalog__filter_radio-unchecked.svg') no-repeat 0 center ;
+  vertical-align: middle;
+}
+
+.filter__label_fatness:hover {
+  background: url('../img/catalog__filter_radio-unchecked_hover.svg') no-repeat 0 center ;
 }
 
 .filter__label_fatness:last-of-type {
   margin-right: 0px;
 }
 
-.filter__label_fatness::before {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  border: 1px solid #f8f7f4;
-  border-radius: 50%;
-  content: "";
-  transform: translate(0%;
-  -50%);
+#fat-0:checked ~ .filter__label_fatness[for="fat-0"],
+#fat-10:checked ~ .filter__label_fatness[for="fat-10"],
+#fat-30:checked ~ .filter__label_fatness[for="fat-30"],
+#fat-30plus:checked ~ .filter__label_fatness[for="fat-30plus"] {
+  background: url('../img/catalog__filter_radio-checked.svg') no-repeat 0 center ;
 }
 
-#fat-0:checked ~ .filter__label_fatness[for="fat-0"]::after,
-#fat-10:checked ~ .filter__label_fatness[for="fat-10"]::after,
-#fat-30:checked ~ .filter__label_fatness[for="fat-30"]::after,
-#fat-30plus:checked ~ .filter__label_fatness[for="fat-30plus"]::after {
-  position: absolute;
-  top: 20%;
-  left: 4px;
-  width: 12px;
-  height: 12px;
-  background-color: #f8f7f4;
-  border: 1px solid #f8f7f4;
-  border-radius: 50%;
-  content: "";
-  transform: translate(0%;
-  -50%);
+#fat-0:checked ~ .filter__label_fatness[for="fat-0"]:hover,
+#fat-10:checked ~ .filter__label_fatness[for="fat-10"]:hover,
+#fat-30:checked ~ .filter__label_fatness[for="fat-30"]:hover,
+#fat-30plus:checked ~ .filter__label_fatness[for="fat-30plus"]:hover {
+  background: url('../img/catalog__filter_radio-checked_hover.svg') no-repeat 0 center ;
 }
-
+  
 .filter-bottom {
   padding-top: 13px;
 }
@@ -1340,8 +1332,16 @@ ul {
 }
 
 .filter__label_filler {
+  display: inline-block;
+  min-height: 20px;
   margin-right: 17px;
   padding-left: 32px;
+  background: url('../img/catalog__filter_checkbox-unchecked.svg') no-repeat 0 center;
+  vertical-align: middle;
+}
+
+.filter__label_filler:hover {
+  background: url('../img/catalog__filter_checkbox-unchecked_hover.svg') no-repeat 0 center;
 }
 
 .filter__label_filler:last-of-type {
@@ -1356,32 +1356,20 @@ ul {
   margin-right: 22px;
 }
 
-.filter__label_filler::before {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 20px;
-  height: 20px;
-  background: url('../img/catalog__filter_checkbox-unchecked.svg') no-repeat center;
-  content: "";
-  transform: translate(0%;
-  -50%);
+#choco:checked ~ .filter__label_filler[for="choco"],
+#sugar:checked ~ .filter__label_filler[for="sugar"],
+#fruits:checked ~ .filter__label_filler[for="fruits"],
+#syrup:checked ~ .filter__label_filler[for="syrup"],
+#jam:checked ~ .filter__label_filler[for="jam"] {
+  background: url('../img/catalog__filter_checkbox-checked.svg') no-repeat 0 center;
 }
 
-#choco:checked ~ .filter__label_filler[for="choco"]::after,
-#sugar:checked ~ .filter__label_filler[for="sugar"]::after,
-#fruits:checked ~ .filter__label_filler[for="fruits"]::after,
-#syrup:checked ~ .filter__label_filler[for="syrup"]::after,
-#jam:checked ~ .filter__label_filler[for="jam"]::after {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 20px;
-  height: 20px;
-  background: url('../img/catalog__filter_checkbox-checked.svg') no-repeat center;
-  content: "";
-  transform: translate(0%;
-  -50%);
+#choco:checked ~ .filter__label_filler[for="choco"]:hover,
+#sugar:checked ~ .filter__label_filler[for="sugar"]:hover,
+#fruits:checked ~ .filter__label_filler[for="fruits"]:hover,
+#syrup:checked ~ .filter__label_filler[for="syrup"]:hover,
+#jam:checked ~ .filter__label_filler[for="jam"]:hover {
+  background: url('../img/catalog__filter_checkbox-checked_hover.svg') no-repeat 0 center;
 }
 
 .filter__label_fatness::before:hover,
@@ -1706,6 +1694,10 @@ ul {
   color: #323232;
 }
 
+.feedback__input-block {
+  position: relative;
+}
+
 .feedback__input {
   display: block;
   width: 266px;
@@ -1740,6 +1732,25 @@ ul {
   /*150*/
   margin-bottom: 25px;
   padding-top: 8px;
+}
+
+.feedback__input:focus {
+  outline: 1px solid #8fbdec;
+}
+
+.feedback__outer-placeholder {
+  min-width: 100px;
+  padding-left: 15px;
+  position: absolute;
+  top: -15px;
+  left: 0;
+  font: 1.1em/1.1818181818em "Roboto", Arial, sans-serif;/*11/13*/
+  color: #999999;
+}
+
+.feedback__input:focus ~ .feedback__outer-placeholder {
+  display: block;
+  color: #5b9ddf;
 }
 
 .feedback__submit-section {
