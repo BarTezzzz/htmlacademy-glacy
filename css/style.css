@@ -357,6 +357,10 @@ ul {
   color: #999999;
 }
 
+.header-top__user-li_enter {
+  position: relative;
+}
+
 .header-top__user-link_enter {
   width: 50px;
   background: rgba(255, 255, 255, 0.2) url('../img/header-top__enter.svg') no-repeat 15px center;
@@ -454,7 +458,7 @@ ul {
   color: #323232;
 }
 
-.header-top__user-li_enter {
+.header-top__user-li_cart {
   position: relative;
 }
 
@@ -469,7 +473,130 @@ ul {
   background-color: #f8f7f4;
 }
 
+.header-top__cart-window {
+  position: absolute;
+  top: 38px;
+  left: -99999;
+  width: 512px;
+  padding-left: 12px;
+  padding-bottom: 18px;
+  padding-right: 12px;
+  background-color: #f8f7f4;
+  box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: opacity linear 0.25s;
+  opacity: 0;
+  z-index: 1;
+}
 
+.cart-window__top-section {
+  padding-top: 29px;
+  padding-left: 29px;
+  padding-bottom: 15px;
+}
+
+.cart-window__item {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.cart-window__del-item {
+  position: absolute;
+  top: -15px;
+  left: -27px;
+}
+
+.cart-window__del-item::before,
+.cart-window__del-item::after {
+  position: absolute;
+  top: 20px;
+  left: 4px;
+  width: 13px;
+  height: 1px;
+  background-color: #676766;
+  content: "";
+}
+
+.cart-window__del-item::before {
+  transform: rotate(45deg);
+}
+
+.cart-window__del-item::after {
+  transform: rotate(-45deg);
+}
+.cart-window__item-link {
+  display: inline-block;
+  font: 1.3em/1.2307692308em "Roboto", Arial, sans-serif;/*13/16*/
+  color: #323232;
+}
+
+.cart-window__item-link_desc {
+  position: relative;
+  width: 218px;
+  min-height: 33px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  padding-left: 44px;
+}
+
+.cart-window__item-link_desc2 {
+  margin-bottom: 0; 
+}
+
+.cart-window__item-img {
+  position: absolute;
+  top: -10px;
+  left: 0px;
+}
+
+.cart-window__span_calc {
+  color: #999999;
+}
+
+.cart-window__item-link_price {
+  margin-left: auto;
+  padding-right: 19px;
+}
+
+.cart-window__bottom-section {
+  text-align: left;
+  width: 100%;
+  padding-top: 15px;
+  border-top: 1px solid #cacac7;
+}
+
+.cart-window__total-price {
+  float: right;
+  width: 100%;
+  margin-bottom: 13px;
+  text-align: right;
+}
+
+.cart-window__span_total {
+  font: 1.5em/1.2em "Roboto", Arial, sans-serif;/*15/18*/
+  color: #333333;
+}
+
+.cart-window__span_total-price {
+  font: 1.5em/1.2em "Roboto-Bold", Arial, sans-serif;/*15/18*/
+  color: #333333;
+}
+
+.cart-window__buy-btn {
+  float: right;
+  width: 170px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  border-radius: 23px;
+}
+
+.header-top__user-li_cart:hover > .header-top__cart-window {
+  display: block;
+  left: -413px;
+  opacity: 1;
+}
 /*HEADER-Bottom*/
 
 .header-bottom {
