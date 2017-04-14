@@ -81,14 +81,14 @@
                 <input class="header-top__enter-input" type="email" placeholder="Электронная почта">
                 <input class="header-top__enter-input" type="password" placeholder="Пароль">
                 <div class="enter-window__bottom clearfix">
-                  <input class="glacy-btn header-top__enter-submit" type="submit" value="Войти">  
+                  <input class="glacy-btn header-top__enter-submit" type="submit" value="Войти">
                   <div class="enter-window__links-block">
                     <a class="header-top__enter-link" href="#">
                       <span class="enter-window__span">Забыли пароль?</span>
                     </a>
                     <a class="header-top__enter-link" href="#">
                       <span class="enter-window__span">Новая регистрация</span>
-                    </a>    
+                    </a>
                   </div>
                 </div>
               </form>
@@ -112,14 +112,14 @@
     <div class="slider">
       <div class="container container_slider">
         <input id="s1-r1" class="slider__input" type="radio" name="slider__r1" value="s1-r1" checked>
-        <input id="s1-r2" class="slider__input" type="radio" name="slider__r1" value="s1-r2" >
-        <input id="s1-r3" class="slider__input" type="radio" name="slider__r1" value="s1-r3" >
+        <input id="s1-r2" class="slider__input" type="radio" name="slider__r1" value="s1-r2">
+        <input id="s1-r3" class="slider__input" type="radio" name="slider__r1" value="s1-r3">
         <div class="slider__switches">
           <label for="s1-r1" class="slider__switch slider__switch_1"></label>
           <label for="s1-r2" class="slider__switch slider__switch_2"></label>
           <label for="s1-r3" class="slider__switch slider__switch_3"></label>
         </div>
-        <div class="slider__wrapper">
+        <div class="slider__wrapper clearfix">
           <div class="slider__slide slider__slide_1">
             <div class="slider__bg-slide slider__bg-slide_1">
               <div class="slider__light-bg slider__light-bg_1"></div>
@@ -156,30 +156,26 @@
             </h2>
             <a class="glacy-btn glacy-btn_slider" href="#">Давайте оба!</a>
           </div>
+          <div class="banners container_banners">
+            <div class="banners__banner banners__banner_left">
+              <h3 class="banners__banner-title">Малинка даром!</h3>
+              <p class="banners__banner-description">
+                При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+              </p>
+              <a class="glacy-btn glacy-btn_banner" href="#">Хочу варенье!</a>
+            </div>
+            <div class="banners__banner banners__banner_right">
+              <h3 class="banners__banner-title">Шоколадки даром!</h3>
+              <p class="banners__banner-description">
+                При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+              </p>
+              <a class="glacy-btn glacy-btn_banner glacy-btn_banner-choco" href="#">Хочу шоколадки!</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="banners">
-      <div class="container clearfix">
-        <div class="banners__banner banners__banner_left">
-          <h3 class="banners__banner-title">Малинка даром!</h3>
-          <p class="banners__banner-description">
-            При покупке 2 кг любого фруктового мороженого, добавим 
-            в ваш заказ банку малинового варенья бесплатно.
-          </p>
-          <a class="glacy-btn glacy-btn_banner" href="#">Хочу варенье!</a>
-        </div>
-        <div class="banners__banner banners__banner_right">
-          <h3 class="banners__banner-title">Шоколадки даром!</h3>
-          <p class="banners__banner-description">
-            При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
-          </p>
-          <a class="glacy-btn glacy-btn_banner glacy-btn_banner-choco" href="#">Хочу шоколадки!</a>
-        </div>
-      </div>
-    </div>
-    
     <div class="feature-items">
       <div class="container container_feature-items">
         <div class="catalog-items__item feature-items__item feature-items__item_1">
@@ -228,47 +224,49 @@
         </div>
       </div>
     </div>
-    
+
     <div class="about-us">
       <div class="container container_about-us clearfix">
         <h3 class="about-us__company-description">
-          Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного
+          Магазин Глейси &#160; &#8212; это онлайн и офлайн магазин по продаже мороженого собственного
           производства на развес
         </h3>
-        <div class="about-us__col about-us__col_left">
-          <div class="about-us__technology">
-            <img class="about-us__icon about-us__icon_icecream" src="img/about-us__icecream-icon.svg" width="47.375" height="47.38" alt="tech#1">
-            <p class="about-us__technology-description">
-              Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
-            </p>
+        <div class="about-us__cols-wrapper">
+          <div class="about-us__col about-us__col_left">
+            <div class="about-us__technology">
+              <img class="about-us__icon about-us__icon_icecream" src="img/about-us__icecream-icon.svg" width="47.375" height="47.38" alt="tech#1">
+              <p class="about-us__technology-description">
+                Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+              </p>
+            </div>
+            <div class="about-us__technology">
+              <img class="about-us__icon about-us__icon_bottom" src="img/about-us__leaf-icon.svg" width="47.375" height="47.38" alt="tech#2">
+              <p class="about-us__technology-description">
+                Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.
+              </p>
+            </div>
           </div>
-          <div class="about-us__technology">
-            <img class="about-us__icon about-us__icon_bottom" src="img/about-us__leaf-icon.svg" width="47.375" height="47.38" alt="tech#2">
-            <p class="about-us__technology-description">
-              Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.
-            </p>
-          </div>
-        </div>
-        <div class="about-us__col about-us__col_right">
-          <div class="about-us__technology">
-            <img class="about-us__icon" src="img/about-us__cow-icon.svg" width="47.375" height="47.38" alt="tech#3">
-            <p class="about-us__technology-description">
-              Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
-            </p>
-          </div>
-          <div class="about-us__technology">
-            <img class="about-us__icon about-us__icon_bottom" src="img/about-us__temperature-icon.svg" width="47.375" height="47.38" alt="tech#4">
-            <p class="about-us__technology-description">
-              Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
-            </p>
+          <div class="about-us__col about-us__col_right">
+            <div class="about-us__technology">
+              <img class="about-us__icon" src="img/about-us__cow-icon.svg" width="47.375" height="47.38" alt="tech#3">
+              <p class="about-us__technology-description">
+                Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+              </p>
+            </div>
+            <div class="about-us__technology">
+              <img class="about-us__icon about-us__icon_bottom" src="img/about-us__temperature-icon.svg" width="47.375" height="47.38" alt="tech#4">
+              <p class="about-us__technology-description">
+                Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    
+
     <div class="news">
-      <div class="container clearfix">
-        <div class="banners__banner news__item news__item_blog">
+      <div class="container container_banners clearfix">
+        <div class="banners__banner banners__banner_left news__item news__item_blog">
           <span class="news__blog-news">Новое в нашем блоге</span>
           <a class="news__blog-entry-title" href="#">
             10 способов сервировки
@@ -276,7 +274,7 @@
             <br>к столу
           </a>
         </div>
-        <div class="banners__banner news__item news__item_subscription">
+        <div class="banners__banner banners__banner_right news__item news__item_subscription">
           <p class="news__subscription-description">
             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
           </p>
