@@ -59,6 +59,7 @@ img,
 video,
 audio {
   max-width: 100%;
+  height: auto;
 }
 
 input {
@@ -88,7 +89,8 @@ ul {
 }
 
 .container {
-  width: 1146px;
+  width: 100%;
+  max-width: 1146px;
   margin: 0 auto;
 }
 
@@ -932,12 +934,7 @@ ul {
 }
 
 .catalog-items__item-img {
-  width:267px;
-  height: 267px;
   margin-bottom: 10px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  outline: 1px solid red;
 }
 
 .catalog-items__item-price {
@@ -1034,6 +1031,8 @@ ul {
 /*ABOUT-US*/
 
 .about-us {
+  width: 100%;
+  height: auto;
   padding-bottom: 29px;
   background: url('../img/about-us__bg.png') no-repeat center;
 }
@@ -1196,7 +1195,7 @@ ul {
 
 .container_contacts {
   position: relative;
-  width: 1200px;
+  max-width: 1200px;
 }
 
 .contacts__map-link::before {
@@ -1921,21 +1920,14 @@ ul {
 @media only screen and (max-width: 1200px) {
   .catalog-items__item {
     width: 200px;
-    height: 262px;
+    height: 262px;/*check*/
   }
   
-  .catalog-items__item-img {
-    width: 200px;
-    height: 150px;/*check*/
-   }
   .catalog-items__item-overlay {
     top: -2%;
     left: -5%;
-    width: 220px;/*267/292*/
-    height: 360px;/*360/404*/
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 7px;
-    z-index: 1;
+    width: 220px;/*267/292*//*check*/
+    height: 360px;/*360/404*//*check*/
   }
 }
 
@@ -1943,45 +1935,16 @@ ul {
 /* Medium Devices, Desktops */
 
 @media only screen and (max-width: 1146px) {
-  .container {
-    width: auto;
-  }
-  
   .slider__wrapper {
     width: 100%;
   }
-  
-  .container_banners {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-  }
-  
-  .banners__banner_left,
-  .banners__banner_right {
-    float: none;
-  }
-  
-  .about-us__cols-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    outline: 1px solid red;
+  .banners__banner {
+    width: 40%;/*check*/
   }
   
   .about-us__col {
-    float: none;
-    width: auto;
-    outline: 1px solid blue;
-  }
-  
-}
-
-@media only screen and (max-width: 1122px) {
-  .banners__banner {
-    width: 420px;
-    min-height: 188px;
+    width: 40%;/*check*/
+    outline: 1px solid red;
   }
   
   .news__input_email {
@@ -1991,6 +1954,23 @@ ul {
   .news__input_submit {
     float: right;
   }
+  
+  .container_footer {
+    justify-content: space-between;
+  }
+
+  .socials {
+    margin-right: 0px;
+  }
+  
+  .footer-menu__list {
+    width: 30%;/*check*/
+  }
+
+}
+
+@media only screen and (max-width: 1122px) {
+  
 }
 
 @media only screen and (max-width: 915px) {
