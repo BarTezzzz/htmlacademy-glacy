@@ -48,7 +48,7 @@ $(document).ready(function () {
     }
   };
   
-  //setInterval($.fn.sliderSwitcherAuto, 3000);
+  setInterval($.fn.sliderSwitcherAuto, 3000);
 
 /*Modal-Window*/
   $('.js-modal-show').on('click', function () {
