@@ -3,16 +3,6 @@
 $(document).ready(function () {
   'use strict';
 
-  /*event.preventDefault() gor IE9(event.returnValue = false)*/
-  $.fn.eventPreventDefaultSafe = function () {
-    if (event.preventDefault) {
-      event.preventDefault();
-    } else {
-      event.returnValue = false;
-    }
-  };
-  /*-------------------------------------------------------*/
-
   /*SLIDER*/
   $.fn.sliderSwitcherManual = function () {
     $('.slider__switch_1').on('click', function () {
@@ -51,8 +41,8 @@ $(document).ready(function () {
   setInterval($.fn.sliderSwitcherAuto, 3000);
 
 /*Modal-Window*/
-  $('.js-modal-show').on('click', function () {
-    $.fn.eventPreventDefaultSafe();
+  $('.js-modal-show').on('click', function (event) {
+    event.preventDefault(event);
     $('.overlay').show();
     if ($(this).hasClass('glacy-btn_feedback')) {
       $('.feedback-modal-window').fadeIn('slow');
@@ -61,8 +51,8 @@ $(document).ready(function () {
     }
   });
   
-  $('.modal__close-btn').on('click', function () {
-    $.fn.eventPreventDefaultSafe();
+  $('.modal__close-btn').on('click', function (event) {
+    event.preventDefault(event);
     $('.feedback-modal-window').fadeOut('fast');
     $('.map-modal-window').fadeOut('fast');
     $('.overlay').hide();
